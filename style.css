@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+header {
+    background: #342ac6;
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+button, .btn {
+    background: #c1096b;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: rgb(207, 74, 74);
+}
+
+button:hover, .btn:hover {
+    background: #0369a1;
+}
+
+section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+#home {
+    padding: 110px 10%;
+}
+
+#home h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+#home span {
+    color: #0284c7;
+}
+
+#home p {
+    margin: 15px 0 25px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+.skills-container, .projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000015;
+    flex: 1 1 200px;
+    max-width: 350px;
+    transition: transform 0.1s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+form {
+    max-width: 450px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Dark mode */
+body.dark {
+    background: #111827;
+    color: #f9fafb;
+}
+
+body.dark .card {
+    background: #1f2937;
+    color: white;
+}
+
+body.dark input,
+body.dark textarea {
+    background: #1f2937;
+    color: white;
+    border-color: #4b5563;
+}
+
+body.dark #about,
+body.dark #skills,
+body.dark #projects,
+body.dark #contact {
+    background: #111827;
+}
+
+/* Mobile and tablet screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
