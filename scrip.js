@@ -1,4 +1,4 @@
-```javascript
+
 // Dark and light mode
 const themeBtn = document.getElementById("themeBtn");
 
